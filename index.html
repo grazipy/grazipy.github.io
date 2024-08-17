@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ TECHNOLOGY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="header-content">
+            <img src="imagens/Logo AZTECH sem fundo.png" alt="Logo AZ TECH" id="logo">
+            <h1>AZ TECHNOLOGY</h1>
+        </div>
+        <nav>
+            <!-- Links de navegação -->
+            <a href="#">Início</a>
+            <a href="#features">Serviços</a>
+            <a href="#copo"></a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Bem-vindo à AZ TECHNOLOGY</h2>
+            <p>Tecnologia de A ao Z</p>
+            <button>Conheça mais</button>
+        </section>
+        <section id="features">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-cube"></i>
+                    <h3>Modelagens 3D</h3>
+                    <p>Criamos modelos 3D detalhados e precisos para diversas aplicações.</p>
+                </li>
+                <li>
+                    <i class="fas fa-code"></i>
+                    <h3>Programação</h3>
+                    <p>Desenvolvemos software sob medida para atender às suas necessidades.</p>
+                </li>
+                <li>
+                    <i class="fas fa-robot"></i>
+                    <h3>Soluções Automatizadas</h3>
+                    <p>Implementamos automações para otimizar processos e aumentar a eficiência.</p>
+                </li>
+                <li>
+                    <i class="fas fa-cogs"></i>
+                    <h3>Integração Homem-Máquina</h3>
+                    <p>Integramos sistemas para melhorar a interação entre operadores e máquinas.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="copo">
+            <h2>Visualizador 3D</h2>
+            <div id="COPO"></div>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 AZ TECHNOLOGY. Todos os direitos reservados.</p>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário tradicional
+            const name = encodeURIComponent(document.getElementById('name').value);
+            const email = encodeURIComponent(document.getElementById('email').value);
+            const message = encodeURIComponent(document.getElementById('message').value);
+            const whatsappUrl = `https://wa.me/5515996670034?text=Nome:%20${name}%0AE-mail:%20${email}%0AMensagem:%20${message}`;
+            window.location.href = whatsappUrl; // Redireciona para o WhatsApp
+        });
+    </script>
+</body>
+</html>
+
