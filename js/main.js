@@ -115,4 +115,3 @@ window.addEventListener("resize", function () {
 });
 
 animate();
-
