@@ -9,47 +9,34 @@
 body {
     font-family: 'Space Mono', monospace;
     color: #333;
-    line-height: 1.6;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 /* Estilo do cabeçalho */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: #27292b;
     color: #fff;
     padding: 1rem;
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1000;
 }
 
-/* Conteúdo do cabeçalho */
 #header-content {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
-/* Estilo do logo */
 #logo {
     height: 60px;
 }
 
-/* Estilo do título do cabeçalho */
-h1 {
-    font-size: 1.8rem;
-}
-
-/* Estilo dos links de navegação */
 nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1rem;
     gap: 1rem;
 }
 
@@ -57,26 +44,24 @@ nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
     transition: background 0.3s ease;
-    display: block;
 }
 
 nav a:hover {
     background: #444;
 }
 
-/* Estilo principal */
+/* Conteúdo principal */
 main {
-    padding: 6% 3% 3% 3%;
-    margin-top: 100px; /* Espaço para o cabeçalho fixo */
+    padding: 5% 2%;
+    margin-top: 80px; /* Espaço para o cabeçalho fixo */
 }
 
-/* Seção hero */
+/* Estilo do hero */
 #hero {
     text-align: center;
     background: #e2e2e2;
-    padding: 2rem 1rem;
+    padding: 2rem;
     border-radius: 10px;
 }
 
@@ -109,7 +94,13 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Estilo das listas de serviços */
+/* Estilo dos serviços */
+#features {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
 #features ul {
     list-style: none;
     padding: 0;
@@ -187,27 +178,25 @@ footer {
 
 /* Responsividade */
 @media (max-width: 1024px) {
-    header {
-        padding: 1rem;
-    }
-
     #header-content {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     nav {
         flex-direction: column;
-        align-items: center;
+        width: 100%;
     }
 
     nav a {
         padding: 0.5rem;
         font-size: 1rem;
+        text-align: center;
+        width: 100%;
     }
 
     main {
-        padding: 3% 1% 3% 1%;
+        padding: 3% 1%;
         margin-top: 70px; /* Ajuste o espaço para o cabeçalho fixo */
     }
 }
