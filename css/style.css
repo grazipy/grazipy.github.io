@@ -58,7 +58,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionado sombra para melhor visibilidade */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #header-content {
@@ -73,7 +73,7 @@ header #logo {
 
 header h1 {
     font-size: 1.8vw;
-    white-space: nowrap; /* Evita quebra de linha */
+    white-space: nowrap;
 }
 
 nav {
@@ -81,153 +81,9 @@ nav {
     gap: 1.5%;
 }
 
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2% 5%;
-    }
-
-    #header-content {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 10px;
-    }
-
-    header #logo {
-        height: auto;
-        margin-right: 0;
-    }
-
-    header h1 {
-        font-size: 2rem;
-        white-space: normal; /* Permite quebra de linha */
-        text-align: center;
-    }
-
-    nav {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        gap: 0; /* Remove o espaço entre os itens do menu */
-    }
-
-    nav a {
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    #hero {
-        padding: 5% 4%;
-    }
-
-    #hero h2 {
-        font-size: 2rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
-    }
-
-    #hero button {
-        font-size: 0.9rem;
-    }
-
-    #features {
-        padding: 5% 2%;
-    }
-
-    #features li {
-        margin: 2% 0;
-        padding: 2%;
-    }
-
-    #features i {
-        font-size: 2rem;
-    }
-
-    #features h3 {
-        font-size: 1.2rem;
-    }
-
-    #features p {
-        font-size: 0.9rem;
-    }
-
-    form label {
-        font-size: 1rem;
-    }
-
-    form input, form textarea {
-        font-size: 0.9rem;
-    }
-
-    form input[type="submit"] {
-        font-size: 1rem;
-        padding: 10px;
-    }
-
-    #portfolio {
-        padding: 5% 4%;
-    }
-
-    .portfolio-grid {
-        padding: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.4rem;
-    }
-
-    #hero h2 {
-        font-size: 1.8rem;
-    }
-
-    #hero p {
-        font-size: 0.9rem;
-    }
-
-    #hero button {
-        font-size: 0.8rem;
-    }
-
-    #features h3 {
-        font-size: 1rem;
-    }
-
-    #features p {
-        font-size: 0.8rem;
-    }
-
-    form label {
-        font-size: 0.9rem;
-    }
-
-    form input, form textarea {
-        font-size: 0.8rem;
-    }
-
-    form input[type="submit"] {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-
-    #portfolio {
-        padding: 5% 2%;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Ajuste para dispositivos menores */
-    }
-}
-
 /* Estilo das seções */
 main {
-    margin-top: 10vh; /* Para compensar o cabeçalho fixo */
+    margin-top: 10vh;
 }
 
 /* Estilo da seção hero */
@@ -366,8 +222,8 @@ form input[type="submit"]:hover {
 }
 
 footer {
-    background-color: #1d1b1b; /* Cor de fundo cinza */
-    color: #ffffff; /* Cor do texto */
+    background-color: #1d1b1b;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
