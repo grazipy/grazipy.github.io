@@ -110,12 +110,71 @@ nav {
         flex-direction: column;
         width: 100%;
         align-items: center;
+        gap: 0; /* Remove o espaço entre os itens do menu */
     }
 
     nav a {
         padding: 10px;
         width: 100%;
         text-align: center;
+    }
+
+    #hero {
+        padding: 5% 4%;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    #hero button {
+        font-size: 0.9rem;
+    }
+
+    #features {
+        padding: 5% 2%;
+    }
+
+    #features li {
+        margin: 2% 0;
+        padding: 2%;
+    }
+
+    #features i {
+        font-size: 2rem;
+    }
+
+    #features h3 {
+        font-size: 1.2rem;
+    }
+
+    #features p {
+        font-size: 0.9rem;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+
+    form input[type="submit"] {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #portfolio {
+        padding: 5% 4%;
+    }
+
+    .portfolio-grid {
+        padding: 0;
     }
 }
 
@@ -155,6 +214,14 @@ nav {
     form input[type="submit"] {
         font-size: 0.9rem;
         padding: 8px;
+    }
+
+    #portfolio {
+        padding: 5% 2%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Ajuste para dispositivos menores */
     }
 }
 
