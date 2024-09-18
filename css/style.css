@@ -1,104 +1,127 @@
-/* Reset básico */
+/* Reset básico e estilização geral */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fonte global */
 body {
     font-family: 'Space Mono', monospace;
-    color: #333;
-    background-color: #f4f4f4;
     line-height: 1.6;
+    color: #27292b;
+    background-color: #f4f4f4;
 }
 
-/* Estilo do cabeçalho */
+/* Estilo para os links de navegação */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #008CBA;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+/* Estilo específico para o botão Portfólio */
+a[href="#portfolio"] {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 2px solid #008CBA;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a[href="#portfolio"]:hover {
+    background-color: #008CBA;
+    color: #fff;
+    border: 2px solid #fff;
+    transform: scale(1.1);
+}
+
+/* Estilo do cabeçalho fixo */
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #27292b;
     color: #fff;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    padding: 1% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-#logo {
-    height: 60px;
+header #logo {
+    height: 5vh;
+    margin-right: 2%;
+}
+
+header h1 {
+    font-size: 1.8vw;
+    white-space: nowrap;
 }
 
 nav {
     display: flex;
-    gap: 1rem;
+    gap: 1.5%;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s ease;
-}
-
-nav a:hover {
-    background: #444;
-}
-
-/* Conteúdo principal */
+/* Estilo das seções */
 main {
-    padding: 5% 2%;
-    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+    margin-top: 10vh;
 }
 
-/* Estilo do hero */
+/* Estilo da seção hero */
 #hero {
+    background: #27292b;
+    color: #fff;
+    padding: 5% 2%;
     text-align: center;
-    background: #e2e2e2;
-    padding: 2rem;
-    border-radius: 10px;
 }
 
 #hero h2 {
-    font-size: 2rem;
+    font-size: 2.5vw;
 }
 
 #hero p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
+    font-size: 1.2vw;
 }
 
 #hero button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background: #0066cc;
-    color: #fff;
+    background: #fff;
+    color: #0066cc;
     border: none;
+    padding: 1% 2%;
+    font-size: 1vw;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 #hero button:hover {
-    background: #005bb5;
-}
-
-/* Estilo das seções */
-section {
-    margin-bottom: 2rem;
+    background: #ddd;
 }
 
 /* Estilo dos serviços */
 #features {
     background: #fff;
-    padding: 1rem;
-    border-radius: 10px;
+    text-align: center;
+    padding: 5% 2%;
 }
 
 #features ul {
@@ -107,96 +130,100 @@ section {
 }
 
 #features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+    margin: 2% 0;
+    padding: 2%;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #features i {
-    font-size: 2rem;
-    margin-right: 1rem;
+    font-size: 2.5vw;
+    color: #0066cc;
+    margin-bottom: 1%;
 }
 
 #features h3 {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
-/* Estilo do formulário de contato */
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-#contact-form label {
-    font-weight: bold;
-}
-
-#contact-form input, #contact-form textarea {
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-#contact-form input[type="submit"] {
-    background: #0066cc;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s ease;
-}
-
-#contact-form input[type="submit"]:hover {
-    background: #005bb5;
+#features p {
+    font-size: 1vw;
 }
 
 /* Estilo do portfólio */
 #portfolio {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 5% 2%;
+    background: #f4f4f4;
 }
 
-#portfolio-gallery {
+#portfolio h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 0 10px;
 }
 
 .portfolio-item img {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo do rodapé */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #27292b;
+.portfolio-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do formulário de contato */
+#contact {
+    background: #f4f4f4;
+    padding: 5% 2%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 0.5vw;
+    font-size: 1.2vw;
+}
+
+form input, form textarea {
+    margin-bottom: 1.5%;
+    padding: 1%;
+    border: 1px solid #d5cfcf;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+form input[type="submit"] {
+    font-size: 1.2vw;
+    padding: 1% 2%;
+    background: #0066cc;
     color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-    #header-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+form input[type="submit"]:hover {
+    background: #005bb5;
+}
 
-    nav {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav a {
-        padding: 0.5rem;
-        font-size: 1rem;
-        text-align: center;
-        width: 100%;
-    }
-
-    main {
-        padding: 3% 1%;
-        margin-top: 70px; /* Ajuste o espaço para o cabeçalho fixo */
-    }
+footer {
+    background-color: #1d1b1b;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
 }
