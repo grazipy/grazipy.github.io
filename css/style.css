@@ -11,7 +11,41 @@ body {
     color: #27292b;
     background-color: #f4f4f4;
 }
+/* Estilo para os links de navegação */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
 
+/* Cor e fundo ao passar o mouse */
+nav a:hover {
+    background-color: #008CBA;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+/* Estilo específico para o botão Portfólio */
+a[href="#portfolio"] {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 2px solid #008CBA;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no botão Portfólio */
+a[href="#portfolio"]:hover {
+    background-color: #008CBA;
+    color: #fff;
+    border: 2px solid #fff;
+    transform: scale(1.1);
+}
 /* Estilo do cabeçalho fixo */
 header {
     position: fixed;
