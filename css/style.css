@@ -11,6 +11,7 @@ body {
     color: #27292b;
     background-color: #f4f4f4;
 }
+
 /* Estilo para os links de navegação */
 nav a {
     text-decoration: none;
@@ -46,6 +47,7 @@ a[href="#portfolio"]:hover {
     border: 2px solid #fff;
     transform: scale(1.1);
 }
+
 /* Estilo do cabeçalho fixo */
 header {
     position: fixed;
@@ -161,6 +163,37 @@ main {
     font-size: 1vw;
 }
 
+/* Estilo do portfólio */
+#portfolio {
+    padding: 5% 2%;
+    background: #f4f4f4;
+}
+
+#portfolio h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* Estilo do formulário de contato */
 #contact {
     background: #f4f4f4;
@@ -205,4 +238,83 @@ footer {
     color: #ffffff; /* Cor do texto */
     padding: 20px;
     text-align: center;
+}
+
+/* Media Queries para melhorar a responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    #hero button {
+        font-size: 0.9rem;
+    }
+
+    #features h3 {
+        font-size: 1.2rem;
+    }
+
+    #features p {
+        font-size: 0.9rem;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+
+    form input[type="submit"] {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    #hero button {
+        font-size: 0.8rem;
+    }
+
+    #features h3 {
+        font-size: 1rem;
+    }
+
+    #features p {
+        font-size: 0.8rem;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    form input, form textarea {
+        font-size: 0.8rem;
+    }
+
+    form input[type="submit"] {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
 }
