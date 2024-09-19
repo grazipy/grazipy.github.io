@@ -37,6 +37,7 @@ a[href="#portfolio"] {
     padding: 1% 2.5%;
     border: 2% solid #008CBA;
     margin-right: 2%;
+    margin-left:2%;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
