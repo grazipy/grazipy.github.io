@@ -53,7 +53,7 @@ header {
 
 header #logo {
     height: 5vh;
-    margin-right: 2%;
+    margin-right: 1%;
 }
 
 header h1 {
@@ -68,7 +68,7 @@ nav {
 
 /* Estilo das seções */
 main {
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 
 /* Estilo da seção hero */
