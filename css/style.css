@@ -1,4 +1,4 @@
-//* Reset básico e estilização geral */
+/* Reset básico e estilização geral */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@ body {
     font-family: 'Space Mono', monospace;
     line-height: 1.6;
     color: #27292b;
-    font-size: 100%;
     background-color: #f4f4f4;
 }
 
@@ -17,35 +16,33 @@ body {
 nav a {
     text-decoration: none;
     color: #fff;
-    padding: 1% 2%;
+    padding: 10px 20px;
     font-family: 'Space Mono', monospace;
     font-size: 1.1rem;
-    border: 2% solid transparent;
+    border: 2px solid transparent;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
     background-color: #008CBA;
-    border: 2% solid #fff;
-    border-radius: 5%;
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
 /* Estilo específico para o botão Portfólio */
 a[href="#portfolio"] {
     background-color: #333;
     color: #fff;
-    border-radius: 5%;
-    padding: 1% 2.5%;
-     font-size: 1.8vw;
-    border: 2% solid #008CBA;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 2px solid #008CBA;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 a[href="#portfolio"]:hover {
     background-color: #008CBA;
     color: #fff;
-    font-size: 2.5vw;
-    border: 2% solid #fff;
+    border: 2px solid #fff;
     transform: scale(1.1);
 }
 
@@ -58,11 +55,10 @@ header {
     color: #fff;
     padding: 1% 3%;
     display: flex;
-    font-size: 2.5vw;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #header-content {
@@ -162,7 +158,7 @@ main {
 }
 
 #portfolio h2 {
-    font-size: 2.5vw;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
 }
