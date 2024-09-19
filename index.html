@@ -70,6 +70,7 @@
                 <textarea id="message" name="message"></textarea>
                 <input type="submit" value="Enviar">
             </form>
+            <a href="https://wa.me/5515996670034" target="_blank">Enviar mensagem no WhatsApp</a>
         </section>
         <section id="portfolio">
             <h2>Portfólio</h2>
@@ -101,4 +102,10 @@
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Evita o envio do formulário tradicional
             const name = encodeURIComponent(document.getElementById('name').value);
-            const email = encodeURIComponent(document.getElementById('email
+            const email = encodeURIComponent(document.getElementById('email').value);
+            const message = encodeURIComponent(document.getElementById('message').value);
+            // Aqui você pode adicionar a lógica para enviar o formulário ou manipular os dados
+        });
+    </script>
+</body>
+</html>
