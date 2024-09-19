@@ -1,3 +1,4 @@
+/* CSS */
 /* Reset básico e estilização geral */
 * {
     margin: 0;
@@ -16,20 +17,18 @@ body {
 nav a {
     text-decoration: none;
     color: #fff;
-    padding: 10px 20px;
+    padding: 1% 2%;
     font-family: 'Space Mono', monospace;
     font-size: 1.1rem;
-    border: 2px solid transparent;
+    border: 2% solid transparent;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
     background-color: #008CBA;
-    border: 2px solid #fff;
-    border-radius: 5px;
+    border: 2% solid #fff;
+    border-radius: 5%;
 }
-
-/* Estilo específico para o botão Portfólio */
 
 
 /* Estilo do cabeçalho fixo */
@@ -44,7 +43,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);
 }
 
 #header-content {
@@ -64,6 +63,7 @@ header h1 {
 
 nav {
     display: flex;
+    align-items: center;
     gap: 1.5%;
 }
 
