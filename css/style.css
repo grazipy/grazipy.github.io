@@ -31,13 +31,13 @@ nav a:hover {
 
 /* Estilo específico para o botão Portfólio */
 a[href="#portfolio"] {
-    background-color: #333;
+   background-color: #333;
     color: #fff;
     border-radius: 5%;
     padding: 1% 2.5%;
     border: 2% solid #008CBA;
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
+    margin-right: 2%; 
 
 a[href="#portfolio"]:hover {
     background-color: #008CBA;
