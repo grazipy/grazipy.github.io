@@ -97,6 +97,7 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin-rigth: 2vw;
 }
 
 #hero button:hover {
