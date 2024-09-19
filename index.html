@@ -16,7 +16,6 @@
             <h1>|TECHNOLOGY</h1>
         </div>
         <nav>
-            <!-- Links de navegação -->
             <a href="#">|Início|</a>
             <a href="#features">Serviços|</a>
             <a href="#copo">3D|</a>
@@ -63,14 +62,13 @@
             <h2>Contato</h2>
             <form id="contact-form">
                 <label for="name">Nome:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <label for="message">Mensagem:</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" required></textarea>
                 <input type="submit" value="Enviar">
             </form>
-            <a href="https://wa.me/5515996670034" target="_blank">Enviar mensagem no WhatsApp</a>
         </section>
         <section id="portfolio">
             <h2>Portfólio</h2>
@@ -101,10 +99,13 @@
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Evita o envio do formulário tradicional
+            
             const name = encodeURIComponent(document.getElementById('name').value);
             const email = encodeURIComponent(document.getElementById('email').value);
             const message = encodeURIComponent(document.getElementById('message').value);
-            // Aqui você pode adicionar a lógica para enviar o formulário ou manipular os dados
+            
+            const whatsappLink = `https://wa.me/5515996670034?text=Nome:%20${name}%0AEmail:%20${email}%0AMensagem:%20${message}`;
+            window.open(whatsappLink, '_blank'); // Abre o WhatsApp em uma nova aba
         });
     </script>
 </body>
