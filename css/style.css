@@ -36,7 +36,7 @@ a[href="#portfolio"] {
     color: #fff;
     border-radius: 5%;
     padding: 1% 2.5%;
-    font-size: 2.5vw;
+     font-size: 1.8vw;
     border: 2% solid #008CBA;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
