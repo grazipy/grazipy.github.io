@@ -3,52 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AZ|TECHNOLOGY</title>
+    <title>AZ | TECHNOLOGY</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/heatmap.js/build/heatmap.min.js"></script>
+    <style>
+        /* Add this CSS to your style.css or inside the <style> tag */
+        img.full-width {
+            width: 100%;
+            height: auto; /* Maintains aspect ratio */
+            display: block; /* Removes bottom space/gap */
+        }
+
+        section {
+            margin: 0; /* Remove default margin */
+        }
+    </style>
 </head>
 <body>
     <header>
         <div id="header-content">
-            <img src="imagens/Logo AZTECH sem fundo.png" alt="Logo AZ TECH" id="logo">
-            <h1>|TECHNOLOGY</h1>
+            <img src="imagens/Logo_AZTECH_sem_fundo.png" alt="Logo AZ TECH" id="logo">
+            <h1>| TECHNOLOGY</h1>
         </div>
         <nav>
             <a href="#">Início</a>
             <a href="#features">Serviços</a>
             <a href="#copo">3D</a>
             <a href="#contact">Contato</a>
-            <a href="#portfolio">Portfólio    </a>
+            <a href="#portfolio">Portfólio</a>
         </nav>
     </header>
-    <main>
-  <body>
 
     <main>
         <section id="hero">
-            <img src="imagens/Home.png" alt="Imagem principal da AZ Technology">
+            <img src="imagens/Home.png" alt="Imagem principal da AZ Technology" class="full-width">
         </section>
 
         <section id="politics">
-            <img src="imagens/Politic.png" alt="Imagem das Políticas">
+            <img src="imagens/Politic.png" alt="Imagem das Políticas" class="full-width">
         </section>
 
         <section id="profile">
-            <img src="imagens/Profile.png" alt="Imagem do Perfil">
+            <img src="imagens/Profile.png" alt="Imagem do Perfil" class="full-width">
         </section>
 
         <section id="services">
-            <img src="imagens/Services.png" alt="Imagem dos Serviços">
+            <img src="imagens/Services.png" alt="Imagem dos Serviços" class="full-width">
         </section>
-                </li>
-            </ul>
-        </section>
+
         <section id="copo">
-            <h2></h2>
+            <h2>Modelo 3D do Copo</h2>
             <div id="COPO"></div>
         </section>
+
         <section id="contact">
             <h2>Contato</h2>
             <form id="contact-form">
@@ -61,6 +70,7 @@
                 <input type="submit" value="Enviar">
             </form>
         </section>
+
         <section id="portfolio">
             <h2>Portfólio</h2>
             <div id="portfolio-gallery">
@@ -79,9 +89,11 @@
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 AZ TECHNOLOGY. Todos os direitos reservados.</p>
     </footer>
+
     <script type="module" src="js/main.js"></script>
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(event) {
