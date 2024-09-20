@@ -10,6 +10,21 @@
     <script src="https://cdn.jsdelivr.net/npm/heatmap.js/build/heatmap.min.js"></script>
 </head>
 <body>
+    <header>
+        <div id="header-content">
+            <img src="imagens/Logo AZTECH sem fundo.png" alt="Logo AZ TECH" id="logo">
+            <h1>|TECHNOLOGY</h1>
+        </div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#features">Serviços</a>
+            <a href="#copo">3D</a>
+            <a href="#contact">Contato</a>
+            <a href="#portfolio">Portfólio    </a>
+        </nav>
+    </header>
+    <main>
+  <body>
 
     <main>
         <section id="hero">
@@ -30,28 +45,25 @@
             <h2>Serviços</h2>
             <img src="imagens/Services.png" alt="Imagem dos Serviços">
         </section>
-
+                </li>
+            </ul>
+        </section>
         <section id="copo">
-            <h2>Modelo 3D do Copo</h2>
+            <h2></h2>
             <div id="COPO"></div>
         </section>
-
         <section id="contact">
             <h2>Contato</h2>
             <form id="contact-form">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
-                
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
-                
                 <label for="message">Mensagem:</label>
                 <textarea id="message" name="message" required></textarea>
-                
                 <input type="submit" value="Enviar">
             </form>
         </section>
-
         <section id="portfolio">
             <h2>Portfólio</h2>
             <div id="portfolio-gallery">
@@ -70,11 +82,9 @@
             </div>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 AZ TECHNOLOGY. Todos os direitos reservados.</p>
     </footer>
-
     <script type="module" src="js/main.js"></script>
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -90,4 +100,3 @@
     </script>
 </body>
 </html>
-
